@@ -1,0 +1,26 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+<f:layout name="Default"/>
+
+<f:section name="main">
+    <f:if condition="{error}">
+        <div class="error">
+            {error}
+        </div>
+    </f:if>
+    
+    
+    <div id="topo"></div>
+    <noscript>
+        Please enable javascript to see the topology.
+    </noscript>
+
+    <v:asset.script name="topo3vars">
+        var dataSrc = '{dataSrc}';
+    </v:asset.script>
+    <v:asset.script path="{settings.assets.js.cookie}" name="jquery_cookie" external="0" allowMoveToFooter="1" />
+    <v:asset.script path="{settings.assets.js.cytoscape}" name="cytoscape" external="0" allowMoveToFooter="1" />
+    <v:asset.script path="{settings.assets.js.topo3}" name="topo3" external="0" allowMoveToFooter="1" dependencies="topo3vars,jquery_cookie,cytoscape" />
+    <v:asset.style path="{settings.assets.css.topo3}" name="topo3style" external="0" />
+</f:section>
+
+

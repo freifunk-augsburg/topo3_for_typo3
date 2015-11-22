@@ -1,0 +1,66 @@
+.tx-topo3 {
+	width: 100%;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+#topo {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#controls {
+    float: right;
+}
+
+
+#controls input, #controls button.btn {
+    margin-left: 5px;
+	padding: 3px 6px;
+}
+
+#topo3-header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    background-color: #f0f0f0;
+    z-index: 20;
+    background-color: rgba(128,128,128,0.8);
+    line-height: 35px;
+    padding: 4px 10px 0 10px;
+    font-size: 12px;
+}
+
+#controls input {
+    width: 160px;
+    padding: 0 5px;
+}
+
+#topo3-stats {
+    float: left;
+}
+
+#topo3-footer {
+    color: #888;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    background-color: rgba(240,240,240,0.9);
+    z-index: 20;
+    text-align: right;
+    font-size: 12px;
+}
+
+#topo3-about {
+    margin-bottom: 3px;
+}
+
+

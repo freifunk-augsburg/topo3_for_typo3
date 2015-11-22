@@ -1,0 +1,30 @@
+
+plugin.tx_topo3fortypo3 {
+	view {
+		templateRootPaths.0 = {$plugin.tx_topo3fortypo3.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_topo3fortypo3.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_topo3fortypo3.view.layoutRootPath}
+	}
+    settings {
+        assets {
+            js {
+                topo3 = {$plugin.tx_topo3fortypo3.settings.assets.js.topo3}
+                cookie = {$plugin.tx_topo3fortypo3.settings.assets.js.cookie}
+                cytoscape = {$plugin.tx_topo3fortypo3.settings.assets.js.cytoscape}
+            }
+            css {
+                topo3 = {$plugin.tx_topo3fortypo3.settings.assets.css.topo3}
+            }
+        }
+        src {
+            # where to find the json data.
+            # use an url starting with http(s) to fetch a remote file or
+            # use a local file relative to the page root
+            url = {$plugin.tx_topo3fortypo3.settings.src.url}
+            # how long to cache a downloaded json file (only for remote files)
+            cache = {$plugin.tx_topo3fortypo3.settings.src.cache}
+        }
+    }
+
+}
+

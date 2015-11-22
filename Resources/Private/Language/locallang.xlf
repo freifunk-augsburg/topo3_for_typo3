@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-10-30T22:13:59Z" product-name="wlc">
+		<header/>
+		<body>
+			<trans-unit id="tx_wlc_domain_model_wlc">
+				<source>Wlc</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

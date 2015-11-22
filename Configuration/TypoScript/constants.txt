@@ -1,0 +1,31 @@
+plugin.tx_topo3fortypo3 {
+	view {
+		# cat=plugin.tx_topo3fortypo3/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:topo3_for_typo3/Resources/Private/Templates/
+		# cat=plugin.tx_topo3fortypo3/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:topo3_for_typo3/Resources/Private/Partials/
+		# cat=plugin.tx_topo3fortypo3/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:topo3_for_typo3/Resources/Private/Layouts/
+	}
+    settings {
+        assets {
+            js {
+                cytoscape = EXT:topo3_for_typo3/Resources/Public/Javascript/cytoscape.min.js
+                topo3 = EXT:topo3_for_typo3/Resources/Public/Javascript/topo3.js
+                cookie = EXT:topo3_for_typo3/Resources/Public/Javascript/jquery.cookie.js
+            }
+            css {
+                topo3 = EXT:topo3_for_typo3/Resources/Public/Css/style.css
+            }
+        }
+        src {
+            # where to find the json data.
+            # use an url starting with http(s) to fetch a remote file or
+            # use a local file relative to the page root
+            url = TOPO3/topo3.json
+            # url = http://wgaugsburg.de/TOPO3/topo3.json
+            # how long (in seconds) to cache a downloaded json file (only for remote files)
+            cache = 60
+        }
+    }
+}
