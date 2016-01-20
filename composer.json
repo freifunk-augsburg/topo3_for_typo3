@@ -1,0 +1,24 @@
+{
+    "name": "topo3-for-typo3",
+    "type": "typo3-cms-extension",
+    "version": "0.1.0",
+    "description": "Include a TOPO3 topology in the page",
+    "keywords": [
+        "typo3",
+        "TYPO3 CMS"
+    ],
+    "homepage": "",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Manuel Munz",
+            "email": "t3dev@comuno.net",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "C1\\Topo3ForTypo3\\": "Classes/"
+        }
+    }
+}

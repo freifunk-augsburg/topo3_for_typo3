@@ -35,7 +35,7 @@ Wifi Link Calculator
 		Manuel Munz
 
 	:Email:
-		t3@comuno.net
+		t3dev@comuno.net
 
 	:License:
 		This document is published under the Open Content License

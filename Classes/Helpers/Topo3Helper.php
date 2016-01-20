@@ -1,6 +1,6 @@
 <?php
 
-namespace Comuno\Topo3ForTypo3\Helpers;
+namespace C1\Topo3ForTypo3\Helpers;
 
 use TYPO3\CMS\Core\Resource\File;
 use TYPO3\CMS\Core\Resource\Folder;

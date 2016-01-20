@@ -1,8 +1,8 @@
 <?php
 
-namespace Comuno\Topo3ForTypo3\Controller;
+namespace C1\Topo3ForTypo3\Controller;
 
-use Comuno\Topo3ForTypo3\Helpers\Topo3Helper;
+use C1\Topo3ForTypo3\Helpers\Topo3Helper;
 
 /**
  * Base controller

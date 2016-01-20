@@ -4,7 +4,7 @@ if (!defined('TYPO3_MODE')) {
 }
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-	'Comuno.' . $_EXTKEY,
+	'C1.' . $_EXTKEY,
 	'Topo3',
 	array(
 		'Topo3' => 'show',
