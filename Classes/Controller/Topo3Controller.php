@@ -28,7 +28,7 @@ class Topo3Controller extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
                 $this->view->assign('error', "Error: Could not load remote data.");
             }
         } else {
-            $this->view->assign('dataSrc', $this->settings['src']['url']);
+            $this->view->assign('dataSrc', $GLOBALS['TSFE']->absRefPrefix . '/' . $this->settings['src']['url']);
         }
     }
 

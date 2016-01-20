@@ -28,16 +28,15 @@ class Topo3Helper {
             }
         }
         if ($cacheStillValid) {
-            return 'typo3temp/topo3.json';
+            return $GLOBALS['TSFE']->absRefPrefix . '/' . 'typo3temp/topo3.json';
         } else {
             $topoData = GeneralUtility::getUrl($settings['src']['url']);
-            //    );
             if ($topoData === FALSE) {
                 return FALSE;
             } else {
                 file_put_contents($temporaryFileName, $topoData);
                 GeneralUtility::fixPermissions($temporaryFileName);
-                return 'typo3temp/topo3.json';
+                return $GLOBALS['TSFE']->absRefPrefix . '/' . 'typo3temp/topo3.json';
             }
         }
     }
