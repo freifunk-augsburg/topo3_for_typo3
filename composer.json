@@ -1,5 +1,5 @@
 {
-    "name": "topo3-for-typo3",
+    "name": "c1/topo3-for-typo3",
     "type": "typo3-cms-extension",
     "version": "0.1.0",
     "description": "Include a TOPO3 topology in the page",
